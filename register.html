@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - PKN Arts and Science College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .payment-section {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        #preview {
+            max-width: 100%;
+            max-height: 200px;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/college-logo.png" alt="College Logo" height="40" class="me-2">
+                PKN Arts and Science College
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Back to Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">Competition Registration Form</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="registrationForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="collegeName" class="form-label">College Name</label>
+                                    <input type="text" class="form-control" id="collegeName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="department" class="form-label">Department</label>
+                                    <select class="form-select" id="department" required>
+                                        <option value="" selected disabled>Select Department</option>
+                                        <option value="IT">Information Technology</option>
+                                        <option value="CSC">Computer Science</option>
+                                        <option value="CLOUD">Cloud Computing</option>
+                                        <option value="ANIMATION">Animation</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="teamLead" class="form-label">Team Lead Name</label>
+                                    <input type="text" class="form-control" id="teamLead" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="teamLeadMobile" class="form-label">Team Lead Mobile</label>
+                                    <input type="tel" class="form-control" id="teamLeadMobile" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="teamName" class="form-label">Team Name</label>
+                                <input type="text" class="form-control" id="teamName" required>
+                            </div>
+                            
+                            <div class="payment-section mb-4">
+                                <h5 class="mb-3">Payment Details</h5>
+                                <p>Registration Fee: ₹300 per participant</p>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">GPay QR Code</label>
+                                            <img src="images/qr-code.png" alt="GPay QR Code" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="paymentProof" class="form-label">Upload Payment Screenshot</label>
+                                            <input type="file" class="form-control" id="paymentProof" accept="image/*" required>
+                                            <img id="preview" src="#" alt="Payment Proof Preview">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">Submit Registration</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Registration Successful!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for registering for the competition. Your registration has been successfully submitted.</p>
+                    <p>We look forward to seeing you at the event!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="register.js"></script>
+</body>
+</html>

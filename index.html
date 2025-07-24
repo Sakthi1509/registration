@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKN Arts and Science College - Intercollege Competition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid px-3 py-2">
+        <div class="d-flex align-items-center w-100">
+            <!-- Logo and College Name (stacked on mobile) -->
+            <a class="navbar-brand d-flex align-items-center me-auto" href="index.html">
+                <img src="https://pkncollege.edu.in/wp-content/uploads/2022/11/logo-right-pkn.png" 
+                     alt="College Logo" 
+                     class="img-fluid"
+                     style="max-height: 40px;">
+                <div class="d-none d-md-block ms-2 text-start">
+                    <div class="navbar-college-name">PKN Arts And Science College</div>
+                    <div class="navbar-college-location">Tirumangalam</div>
+                </div>
+            </a>
+
+            <!-- Mobile-only college name (condensed) -->
+            <div class="d-block d-md-none ms-2 text-white">
+                <div class="fw-bold">PKN College</div>
+                <div class="small">Tirumangalam</div>
+            </div>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <!-- Nav items -->
+        <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#prize">Prizes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item my-2 my-lg-0">
+                    <a class="nav-link btn btn-primary ms-lg-2 w-100 w-lg-auto text-center" 
+                       href="register.html">
+                        Register
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4">Welcome to PKN Arts and Science College</h1>
+                    <p class="lead">Annual Intercollege Competition 2023</p>
+                    <a href="register.html" class="btn btn-primary btn-lg">Register Now</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/college-photo.jpg" alt="College Photo" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Events</h2>
+            <div class="row g-4" id="events-container">
+                <!-- Events will be loaded dynamically from JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Prize Section -->
+    <section id="prize" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Registration Details</h2>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title">₹300</h3>
+                            <p class="card-text">Per Participant</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Registration Kit</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Refreshments</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Lunch</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Certificate</li>
+                            </ul>
+                            <a href="register.html" class="btn btn-primary btn-lg mt-3">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Department Of</h4>
+                    <ul>
+                        <li>Information Technology</li>
+                        <li>Computer Application</li>
+                        <li>Cloud Computing</li>
+                        <li>Animation</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">HOD</h4>
+                    <ul>
+                        <li>Naga Lakshmi (IT) - 0000000000</li>
+                        <li>Isakirajan (CSC) - 0000000000</li>
+                    </ul>
+                    
+                    <p class="mt-4">
+                        To impart highly innovative and technical knowledge to the urban and unreachable rural student folks in computer science through Total Quality Education.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Staff Coordinators</h4>
+                    <ul>
+                        <li>Mrs. Naga Lakshmi [Degree] - 0000000000</li>
+                        <li>Mr. Isaki Rajan [Degree] - 0000000000</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">Student Coordinators</h4>
+                    <ul>
+                        <li>Sakthivel IT (3yr) - 9487603008</li>
+                        <li>Sabari IT (3yr) - 0000000000</li>
+                    </ul>
+                    
+                    <div class="social-links mt-4">
+                        <h4>Follow Us</h4>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#" class="btn btn-outline-primary"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Modal -->
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventModalTitle">Event Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="eventModalBody">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 PKN Arts and Science College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
